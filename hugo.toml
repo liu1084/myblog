@@ -1,0 +1,117 @@
+# Site settings
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+[languages]
+    [languages.en]
+        weight = 1
+        languageName = "English"
+    [languages.zh-hans]
+        weight = 2
+        languageName = "简体中文"
+
+[Services]
+  [Services.Disqus]
+    # Shortname = "XXX"
+  [Services.googleAnalytics]
+    id = "G-88ECNSTQDD"
+
+[module]
+    [[module.imports]]
+        path = 'github.com/hugomods/giscus'
+    [[module.imports]]
+        path = 'github.com/hugomods/google-analytics'
+
+[Params]
+  homeTitle = "Jim Abraham" # Set a different text for the header on the home page
+  subtitle = "Build a beautiful and simple website for me"
+  mainSections = ["post","posts"]
+  logo = "img/avatar-icon.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+
+#  cusdisID = "XXX" # Get your App id from cusdis.com
+#  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+#  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Params.author]
+  # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
+  #name = "Jim Abraham"
+  website = "https://blog.vote-trump.org"
+  email = "liu1084@gmail.com"
+  #facebook = "username"
+  github = "https://github.com/liu1084"
+  #gitlab = "username"
+  #bitbucket = "username"
+  twitter = "lijn55788013"
+  #reddit = "username"
+  linkedin = "jim-abraham-18834a10a"
+  #xing = "username"
+  stackoverflow = "users/1241648/君主不是你"
+  #snapchat = "username"
+  #instagram = "username"
+  #youtube = "user/username" # or channel/channelname
+  #soundcloud = "username"
+  #spotify = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+  #vk = "username"
+  #paypal = "username"
+  #telegram = "username"
+  #500px = "username"
+  #codepen = "username"
+  #mastodon = "url"
+  #kaggle = "username"
+  #weibo = "username"
+  #slack = "username"
+  #medium = "username"
+  #discord = "invite code (https://discord.gg/XXXXXXX)"
+  #strava = "userid"
+
+[Params.giscus]
+    endpoint = 'https://giscus.app/'
+    repo = 'liu1084/myblog'
+    repo_id = 'R_kgDONNdh0A'
+    category = 'Announcements'
+    category_id = 'DIC_kwDONNdh0M4CkKSO'
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3
